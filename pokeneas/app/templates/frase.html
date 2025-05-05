@@ -1,0 +1,17 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PokéNeas Gamificado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-r from-purple-600 to-pink-500 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-2xl p-6 max-w-sm text-center">
+      <h1 class="text-2xl font-extrabold text-white uppercase tracking-wide mb-2">{{ nombre }}</h1>
+      <img src="{{ imagen }}" alt="PokéNea {{ nombre }}" class="mx-auto my-4 w-40 h-40 object-contain animate-bounce">
+      <p class="text-lg font-semibold text-white italic mb-4">“{{ frase }}”</p>
+      <small class="block text-sm text-white/80 mb-4">Contenedor: {{ container_id }}</small>
+      <button onclick="window.location.reload()" class="mt-2 bg-white text-purple-600 font-bold py-2 px-4 rounded-full hover:bg-opacity-90">Siguiente PokéNea</button>
+    </div>
+  </body>
+</html>

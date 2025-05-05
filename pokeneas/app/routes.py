@@ -3,7 +3,7 @@ from flask import jsonify, render_template
 from .data import get_random_pokenea
 
 def register_routes(app): 
-    @app.route("/neadex")
+    @app.route("/")
     def html_pokenea():
         p = get_random_pokenea()
         data = {

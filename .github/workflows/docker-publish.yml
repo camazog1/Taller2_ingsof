@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -f pokeneas/app/Dockerfile -t ${{ secrets.DOCKERHUB_USERNAME }}/pokenea:latest pokeneas/app
+        run: docker build -f pokeneas/app/Dockerfile -t ${{ secrets.DOCKERHUB_USERNAME }}/pokenea:latest .
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/pokenea:latest
